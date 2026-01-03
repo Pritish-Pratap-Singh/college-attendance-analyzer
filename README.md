@@ -5,7 +5,12 @@
 
 #A simple Python project that analyzes student attendance data, identifies defaulters, and generates summary reports.
 
-#Technologies:
-#- Python
-#- Pandas
-#- NumPy
+Technologies:
+- Python
+- Pandas
+s- NumPy
+
+Features:
+- Calculates average attendance
+- Identifies defaulters
+- Generates top performer report
