@@ -1,3 +1,7 @@
+# College Attendance Analyzer
+# Author: Pritish Pratap Singh
+# Purpose: Analyze student attendance and generate reports
+
 import pandas as pd
 
 # Load data
@@ -15,5 +19,11 @@ defaulters = data[data["Average"] < 75]
 # Save reports
 data.to_csv("full_report.csv", index=False)
 defaulters.to_csv("defaulters.csv", index=False)
+
+# Display top performers
+top = data.sort_values(by="Average", ascending=False).head(3)
+top.to_csv("top_performers.csv", index=False)
+print("Top performers saved.")
+
 
 print("Reports generated successfully.")
